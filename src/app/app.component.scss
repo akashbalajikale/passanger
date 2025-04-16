@@ -1,0 +1,26 @@
+ .body{
+    background-color: rgb(197, 163, 163);
+ }
+  
+.mainHeader .navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: rgb(22, 15, 3);
+    border-bottom: 2px solid;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #0e0b02;
+  }
+  

@@ -1,0 +1,25 @@
+<mat-card class="example-card mb-4">
+    <mat-card-title>
+        <div class="form-group">
+            <input type="text" #fn [disabled]="!IsinEditMode"
+            [value]="passObj.fullname" class="form-control fullname"
+            >
+        </div>
+        <mat-card-content>
+            <p>
+                check in date : {{passObj.checkInDate ? (passObj.checkInDate | date) : 'Not checked Yet'}}
+            </p>
+            <p>
+                children : {{passObj.children ? passObj.children.length : 0 }}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button (click)="OnUpdateName(fn.value)" mat-raised-button color="primary">
+                {{IsinEditMode ? 'Upadte' : 'Edit'}}
+            </button>
+
+            <button (click)="Onremove()" mat-raised-button color="accent">Remove</button>
+        </mat-card-actions>
+    </mat-card-title>
+    
+<mat-card>

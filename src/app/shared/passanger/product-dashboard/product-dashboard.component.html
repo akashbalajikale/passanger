@@ -1,0 +1,20 @@
+ <div class="row">
+    <div class="col-md-6 offset-md-3 cls">
+        <h2>AirPassanger</h2>
+        <app-product-count
+        [TotalcheckIn]="checkInCount"
+
+        [TotalpassCount]="passArray.length"
+        ></app-product-count>
+
+        <ul class="list-group mb-4">
+            <li *ngFor="let pass of passArray"  class="list-group-item">
+                {{pass.fullname}}
+            </li>
+        </ul>
+        <app-product-card
+        [passObj]="pass"
+        *ngFor="let pass of passArray"
+        ></app-product-card>
+    </div>
+ </div>

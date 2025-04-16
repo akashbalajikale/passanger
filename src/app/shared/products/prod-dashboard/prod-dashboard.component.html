@@ -1,0 +1,15 @@
+ <div class="container py-5">
+    <div class="row">
+        <div class="col-md-4">
+            <app-product-form></app-product-form>
+        </div>
+        <div class="col-md-8">
+            <div class="d-flex flex-column-reverse">
+                <app-product-card 
+                *ngFor="let pass of productArr"
+                [passObj]="pass"
+                ></app-product-card>
+            </div>
+        </div>
+    </div>
+ </div>
